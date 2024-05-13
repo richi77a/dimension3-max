@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Paginamaestra.Master.cs" Inherits="dimension3_max.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Estilos/Estilos2.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div id="navbar">
+                <ul>
+                    <li><a href="computadoras.aspx">Computadoras</a></li>
+                    <li><a href="laptops.aspx">Laptops</a></li>
+                    <li><a href="componentes.aspx">Componentes</a></li>
+                    <li><a href="accesorios.aspx">Accesorios</a></li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <span>Tienda de Equipos de Cómputo</span>
+                <span>Todo lo que necesitas en un solo lugar</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
